@@ -7,25 +7,132 @@
     <title>Catalog</title>
 </head>
 <body>
-  <header>
+  <header class="page-header">
 
     <nav class="navigation">
-      <img src="img/logo.svg" alt="логотип">
-          <a href="index.html">Главная</a>
-          <a href="about.html">О Седоне</a>
-          <a href="catalog.html">Гостиницы</a>
+        <img src="img/logo.svg" alt="логотип">
+          <ul class="navigation-list">
+            <li><a class="navigation-item" href="Index.html">Главная</a>
+          </li>
+           <li> <a class="navigation-item" href="about.html">О Седоне</a>
+            </li>
+            <li><a class="navigation-item" href="#">Гостиницы</a>
+            </li>
 
-          <button type="search">Иконка поиска</button>
-          <button type="heart">Иконка сердца</button>
-          <button type="wanthere">Хочу сюда!</button>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Лайк</span>
+              </a>
+
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
-      <main>
-        <article>
-          <div></div>
+      <main class="main-catalog">
+        <header class="header-catalog">
+          <h1 class="header-catalog-title">Гостиницы</h1>
+          <ul class="breacrumbs">
+
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Гостиницы</a>
+              </li>
+            </ul>
+                  </header>
+        <section class="hotel-filer">
+          <fieldset class="hotel-filter-group">
+            <legend class="hotel-filter-title">Инфраструктура</legend>
+            <ul class="hotel-filter-list">
+
+              <li class="hotel-filter-item">
+                <label>
+                <input type="checkbox" checked>Бассейн
+              </label></li>
+
+                <li class="hotel-filter-item">
+                  <label>
+                    <input type="checkbox" checked>Парковка
+                    </label></li>
+
+                  <li class="hotel-filter-item">
+                  <input type="checkbox">Wi-Fi
+                  </label>
+                </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья</legend>
+          <ul class="hotel-filter-list">
+            <li class=""hotel-filter-item>
+              <label>
+              <input type="radio" checked>Гостиница</label>
+            </li>
+
+            <li class="hotel-filter-item">
+              <label>
+              <input type="radio">Мотель
+            </label>
+            </li>
+
+            <li class="hotel-filter-item">
+              <label>
+              <input type="radio">Апартаменты
+            </label>
+            </li>
+          </ul>
+
+        </fieldset>
+        </section>
+
         </article>
       </main>
+
+      <footer class="page-footer">
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Vkontakte</h2>
+          <a href="https://vk.com/htmlacademy">
+          <img class="footer-contacts-logo" src="img/vk-icon.png" alt="Vkontakte">
+          </a>
+        </section>
+
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Telegram</h2>
+          <a href="https://web.telegram.org/z/">
+          <img class="footer-contacts-logo" src="img/tg-icon.png" alt="Telegram">
+          </a>
+        </section>
+
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Youtube</h2>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <img class="footer-contacts-logo" src="img/yt-icon.svg" alt="Youtube">
+          </a>
+        </section>
+
+        <section class="footer-contacts-telephone">
+          <h2 class="footer-contacts-telephone">+7(812)812-12-12</h2>
+        </section>
+
+        <section clas="footer-contacts-academy">
+          <h2 class="footer-contacts-academy">.html academy</h2>
+        </section>
+
+
+      </footer>
 </body>
 
 </html>
