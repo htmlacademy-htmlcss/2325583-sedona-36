@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Hotel Catalog</title>
   </head>
   <body>
@@ -47,7 +48,9 @@
         <h1 class="hotel-filter-title">Гостиницы Седоны</h1>
         <ul class="breacrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"></a>
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -90,11 +93,13 @@
 
       <fieldset class="hotel-filter-box">
         <legend class="hotel-filter-title">Стоимость, ₽</legend>
-          <span class="min-price"></span>
+          <span class="min-price">От</span>
+          <label>
           <span class="visually-hidden">Минимальная цена</span>
           <input type="text" id="min-value" placeholder="От">
+        </label>
 
-          <span class="max-price"></span>
+          <span class="max-price">До</span>
           <label>
           <span class="visually-hidden">Максимальная цена</span>
           <input type="number" id="max-value" placeholder="До">
@@ -103,11 +108,9 @@
           <span class="visually-hidden">Ценовой диапозон</span>
           <input type="range" min="0" max="9000" step="1" value="50">
         </label>
-
-          <button class="price-apply-button" type="submit">применить</button>
-          <button class="price-reset-button" type="reset">сбросить</button>
-        </div>
       </fieldset>
+      <button class="price-apply-button" type="submit">применить</button>
+      <button class="price-reset-button" type="reset">сбросить</button>
     </form>
       </section>
 
