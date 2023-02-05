@@ -44,18 +44,16 @@
 
     <main class="main-catalog">
       <section class="hotel-filter">
-        <img class="hotel-filter-background" src="images/catalog-background.jpg" width="1200" height="412">
         <h1 class="hotel-filter-title">Гостиницы Седоны</h1>
         <ul class="breacrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <img class="breadcrumbs-link-home" src="images/icon-home.svg" width="12" height="12" alt="на главную">
-            </a>
+            <a class="breadcrumbs-link" href="index.html"></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+        <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 <fieldset class="hotel-filter-box">
         <legend class="hotel-filter-title">Инфраструктура:</legend>
         <ul class="hotel-filter-list">
@@ -71,8 +69,10 @@
             <label> <input type="checkbox" name="wireless-internet">Wi-Fi </label>
           </li>
         </ul>
+        </fieldset>
 
-               <legend class="hotel-filter-title">Тип жилья:</legend>
+        <fieldset class="hotel-filter-box">
+        <legend class="hotel-filter-title">Тип жилья:</legend>
         <ul class="hotel-filter-list">
           <li class="hotel-filter-item">
             <label> <input type="radio" name="hotel-type" value="hotel" checked>Гостиница </label>
@@ -86,26 +86,33 @@
             <label> <input type="radio" name="hotel-type" value="Apartments">Апартаменты </label>
           </li>
         </ul>
+      </fieldset>
 
-        <div class="hotel-filter-list">
-          <legend class="hotel-filter-title">Стоимость, ₽</legend>
+      <fieldset class="hotel-filter-box">
+        <legend class="hotel-filter-title">Стоимость, ₽</legend>
           <span class="min-price"></span>
           <span class="visually-hidden">Минимальная цена</span>
           <input type="text" id="min-value" placeholder="От">
 
           <span class="max-price"></span>
+          <label>
           <span class="visually-hidden">Максимальная цена</span>
-          <input type="text" id="max-value" placeholder="До">
+          <input type="number" id="max-value" placeholder="До">
+        </label>
+        <label>
+          <span class="visually-hidden">Ценовой диапозон</span>
           <input type="range" min="0" max="9000" step="1" value="50">
-
+        </label>
 
           <button class="price-apply-button" type="submit">применить</button>
           <button class="price-reset-button" type="reset">сбросить</button>
         </div>
       </fieldset>
+    </form>
       </section>
 
-      <section class="hotel-name">
+      <section class="hotels">
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <p class="hotel-find">гостиниц найдено:<span>38</span></p>
         <select class="hotel-options" aria-label="Сортировка">
           <option value="hotel-options-cheap">сначала дешевые
@@ -130,7 +137,7 @@
           <span class="visually-hidden">показать списком</span>
         </a>
         <ul>
-          <h3 class="visually-hidden">Список гостиниц</h3>
+
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa"></a>
