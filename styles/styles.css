@@ -153,15 +153,7 @@ height: 1155px;
 
 
    .advantages-list {
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-justify-content:space-between;
-padding: 0;
-margin:0;
-width: 1200px;
-flex-wrap: wrap;
-list-style:none;
+    list-style:none;
 
 
    }
@@ -169,12 +161,7 @@ list-style:none;
     background-color: #82b3d3;
     color: #ffffff;
     width: 400px;
-    display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  padding: 103px 85px;
-   }
+    }
 
    .advantages-title {
     font-weight: 700;
@@ -194,10 +181,7 @@ list-style:none;
     color: #ffffff;
     text-align:center;
     width:1200px;
-    display:flex;
-    flex-direction: row;
-    align-items:flex-start;
-    padding:0;
+
    }
 
    .advantages-item-square,
@@ -545,7 +529,7 @@ height: 60px;
 display:flex;
 flex-direction: row;
 align-items: center;
-padding: 0px;
+padding: 0;
 list-style:none;
 
 }
