@@ -43,9 +43,10 @@
       </nav>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-catalog main-container">
       <section class="hotel-filter">
-        <h1 class="hotel-filter-header-title">Гостиницы Седоны</h1>
+        <div class="hotel-filter-container">
+        <h1 class="filter-title">Гостиницы Седоны</h1>
         <ul class="breacrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link-home breadcrumbs-link" href="index.html">
@@ -56,6 +57,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+      </div>
 
         <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="hotel-filter-box">
@@ -111,14 +113,17 @@
           <input type="range" min="0" max="9000" step="1" value="50">
         </label>
       </fieldset>
+      <div class="apply-reset-button">
       <button class="price-apply-button button" type="submit">применить</button>
       <button class="price-reset-button button" type="reset">сбросить</button>
+    </div>
 
     </form>
       </section>
 
       <section class="hotels">
         <h2 class="visually-hidden">Список гостиниц</h2>
+        <div class="hotel-find-container">
         <p class="hotel-find">гостиниц найдено:<span>38</span></p>
         <select class="hotel-options" aria-label="Сортировка">
           <option value="hotel-options-cheap">сначала дешевые
@@ -142,6 +147,7 @@
           <img class="catalog-button" src="images/icon-3.svg" width="16" height="14">
           <span class="visually-hidden">показать списком</span>
         </a>
+      </div>
         <ul class="hotel-cards">
 
           <li class="hotel-card-item">
