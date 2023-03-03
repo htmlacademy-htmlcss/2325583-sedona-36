@@ -169,26 +169,35 @@
                   <li class="hotel-filter-item">
                     <label class="hotel-filter-label">
                       <input
+                        class="visually-hidden label-checkbox"
                         type="checkbox"
-                        name="swimming-pool"
                         checked
-                      />Бассейн
+                        name="swimming-pool"
+                      /><span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
 
                   <li class="hotel-filter-item">
                     <label class="hotel-filter-label">
                       <input
+                        class="visually-hidden label-checkbox"
                         type="checkbox"
                         checked
                         name="parking-place"
-                      />Парковка
+                      /><span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
 
                   <li class="hotel-filter-item">
                     <label class="hotel-filter-label">
-                      <input type="checkbox" name="wireless-internet" />Wi-Fi
+                      <input
+                        class="visually-hidden label-checkbox"
+                        type="checkbox"
+                        name="wireless-internet"
+                      /><span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -198,33 +207,36 @@
                 <legend class="hotel-filter-title">Тип жилья:</legend>
                 <ul class="hotel-filter-list">
                   <li class="hotel-filter-item">
-                    <label>
-                      <input
+                    <label class="hotel-filter-label">
+                      <input class="visually-hidden label-radio"
                         type="radio"
                         name="hotel-type"
                         value="hotel"
                         checked
-                      />Гостиница
+                      /><span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
 
                   <li class="hotel-filter-item">
-                    <label>
-                      <input
+                    <label class="hotel-filter-label">
+                      <input class="visually-hidden label-radio"
                         type="radio"
                         name="hotel-type"
                         value="Motel"
-                      />Мотель
+                      /><span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
 
                   <li class="hotel-filter-item">
-                    <label>
-                      <input
+                    <label class="hotel-filter-label">
+                      <input class="visually-hidden label-radio"
                         type="radio"
                         name="hotel-type"
                         value="Apartments"
-                      />Апартаменты
+                      /><span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -232,31 +244,44 @@
 
               <fieldset class="hotel-filter-box hotel-filter-box-price">
                 <legend class="hotel-filter-title">Стоимость, ₽</legend>
-                <span class="visually-hidden">Минимальная цена</span>
-                <input
-                  type="text"
-                  class="price-input"
-                  id="min-value"
-                  placeholder="От"
-                />
-                <span class="visually-hidden">Максимальная цена</span>
-                <input
-                  type="text"
-                  class="price-input-max price-input"
-                  id="max-value"
-                  placeholder="До"
-                />
-                <label>
-                  <span class="visually-hidden">Ценовой диапозон</span>
-                  <input
-                    type="range"
-                    class="price-range"
-                    min="0"
-                    max="9000"
-                    step="1"
-                    value="50"
-                  />
-                </label>
+                <div class="price-range">
+                  <label class="price-range-min">
+                    <span class="visually-hidden">Минимальная цена</span>
+                    <input
+                      type="text"
+                      class="price-input"
+                      id="min-value"
+                      value="0"
+                    />
+                    <span>до</span>
+                  </label>
+                  <label class="price-range-max">
+                    <span class="visually-hidden">Максимальная цена</span>
+                    <input
+                      type="text"
+                      class="price-input-max price-input"
+                      id="max-value"
+                      value="9000"
+                    />
+                    <span>от</span>
+                  </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="right: 0; width: 61px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden"
+                          >Изменить минимальную цену.</span
+                        >
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden"
+                          >Изменить максимальную цену.</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="apply-reset-button">
                 <button class="price-apply-button button" type="submit">
