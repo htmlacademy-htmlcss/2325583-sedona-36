@@ -328,7 +328,7 @@
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
-            </ul>
+          </ul>
 
           <a class="footer-contacts-telephone" href="tel:+78128121212"
             >+7 (812) 812-12-12</a
@@ -351,7 +351,7 @@
       </footer>
     </div>
     <div class="modal-container modal-container-close">
-      <div class="modal modal-auth">
+      <div class="modal">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <button class="modal-close-button">
@@ -369,7 +369,7 @@
               />
             </svg>
           </button>
-          <div class="modal-date">
+          <p class="modal-date">
             <label class="label-date" for="checkin-date">Дата Заезда:</label>
             <input
               class="input-date"
@@ -377,13 +377,14 @@
               id="checkin-date"
               name="checkin-date"
               value="27 апреля 2020"
+              placeholder="Укажите дату"
             />
-            <div class="schedule"></div>
-          </div>
+
+          </p>
           <span class="date-error message"
             >Мы не можем отправить вас в прошлое.</span
           >
-          <div class="modal-date">
+          <p class="modal-date">
             <label class="label-date" for="checkout-date">Дата Выезда:</label>
             <input
               class="input-date"
@@ -391,16 +392,18 @@
               id="checkout-date"
               name="checkout-date"
               value="1 сентября 2023"
+              placeholder="Укажите дату"
             />
-            <div class="schedule"></div>
-          </div>
-          <span class="date-info message"
+
+          </p>
+          <span class="message"
             >На эти даты есть свободные номера. Пока есть.</span
           >
           <div class="count-container">
             <div class="modal-count">
-              <span class="count-title">Взрослые:</span>
-              <span class="count-minus"
+              <label class="count-title" for="count-number-adult">Взрослые:</label>
+
+              <button class="count-minus" type="button"
                 ><svg
                   width="14"
                   height="2"
@@ -413,9 +416,9 @@
                     fill="#7561574D"
                   />
                 </svg>
-              </span>
-              <span class="count-number">2</span>
-              <span class="count-plus"
+              </button>
+              <input class="count-number" value="2" id="count-number-adult">
+              <button class="count-plus" type="button"
                 ><svg
                   width="14"
                   height="14"
@@ -423,15 +426,14 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#7561574D"
-                  />
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#7561574D" />
                 </svg>
-              </span>
+              </button>
             </div>
             <div class="modal-count">
-              <span class="count-title"
+              <label class="count-title" for="count-number-children"
                 >Дети:
-                <span class="tooltip">
+                <div class="tooltip">
                   <button class="tooltip-toggle" type="button">
                     <svg
                       width="3"
@@ -453,10 +455,10 @@
                     которых от 6 до 18 лет. Дети до 6 лет размещаются
                     бесплатно.</span
                   >
-                </span>
-              </span>
+                </div>
+              </label>
 
-              <span class="count-minus"
+              <button class="count-minus" type="button"
                 ><svg
                   width="14"
                   height="2"
@@ -469,9 +471,9 @@
                     fill="#7561574D"
                   />
                 </svg>
-              </span>
-              <span class="count-number">2</span>
-              <span class="count-plus"
+              </button>
+              <input class="count-number" value="2" id="count-number-children">
+              <button class="count-plus" type="button"
                 ><svg
                   width="14"
                   height="14"
@@ -479,15 +481,14 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#7561574D"
-                  />
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#7561574D" />
                 </svg>
-              </span>
+              </button>
             </div>
           </div>
           <button class="modal-button button" type="submit">Найти</button>
         </section>
       </div>
     </div>
-    </body>
+  </body>
 </html>
