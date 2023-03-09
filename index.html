@@ -132,10 +132,10 @@
           </div>
         </section>
 
-        <section class="advantages">
+        <section>
           <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages-lead">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
           </p>
           <p class="advantages-lead-description">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
@@ -149,7 +149,7 @@
             </li>
             <li class="advantages-item-picture-town">
               <img
-                src="images/section-1.jpg"
+                src="images/advantage-1.jpg"
                 width="800"
                 height="385"
                 alt="домики на фоне гор"
@@ -166,7 +166,7 @@
             <li class="advantages-item">
               <h3 class="advantages-title">Красивая дорога</h3>
               <p class="advantages-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
+                Ехать в Седону из Лас-Вегаса<br> совсем не скучно!
               </p>
             </li>
 
@@ -179,7 +179,7 @@
 
             <li class="advantages-item-picture-canyon">
               <img
-                src="images/section-2.jpg"
+                src="images/advantage-2.jpg"
                 width="800"
                 height="385"
                 alt="горный каньон"
@@ -271,7 +271,7 @@
       <footer class="page-footer">
         <div class="page-footer-container">
           <ul class="footer-social-list">
-            <li class="footer-social-item">
+            <li>
               <a class="footer-social-link" href="https://vk.com/htmlacademy">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +290,7 @@
               </a>
             </li>
 
-            <li class="footer-social-item">
+            <li>
               <a
                 class="footer-social-link"
                 href="tg://resolve?domain=htmlacademy"
@@ -309,7 +309,7 @@
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li>
               <a
                 class="footer-social-link"
                 href="https://www.youtube.com/user/htmlacademyru"
@@ -401,9 +401,9 @@
           >
           <div class="count-container">
             <div class="modal-count">
-              <label class="count-title" for="count-number-adult">Взрослые:</label>
-
-              <button class="count-minus" type="button"
+              <label class="count-title" for="count-input-adult">Взрослые:</label>
+              <div class="count-input-wrapper">
+              <button class="count-button count-minus" type="button"
                 ><svg
                   width="14"
                   height="2"
@@ -417,8 +417,8 @@
                   />
                 </svg>
               </button>
-              <input class="count-number" value="2" id="count-number-adult">
-              <button class="count-plus" type="button"
+              <input class="count-input" value="2" id="count-input-adult">
+              <button class="count-button count-plus" type="button"
                 ><svg
                   width="14"
                   height="14"
@@ -430,35 +430,36 @@
                 </svg>
               </button>
             </div>
+            </div>
             <div class="modal-count">
-              <label class="count-title" for="count-number-children"
+              <label class="count-title" for="count-input-children"
                 >Дети:
-                <div class="tooltip">
-                  <button class="tooltip-toggle" type="button">
-                    <svg
-                      width="3"
-                      height="12"
-                      viewBox="0 0 3 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z"
-                        fill="#ffffff"
-                      />
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip"
-                    >Укажите количество детей, которые будут с вами, возраст
-                    которых от 6 до 18 лет. Дети до 6 лет размещаются
-                    бесплатно.</span
-                  >
-                </div>
               </label>
-
-              <button class="count-minus" type="button"
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg
+                    width="3"
+                    height="12"
+                    viewBox="0 0 3 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip"
+                  >Укажите количество детей, которые будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются
+                  бесплатно.</span
+                >
+              </div>
+<div class="count-input-wrapper">
+              <button class="count-button count-minus" type="button"
                 ><svg
                   width="14"
                   height="2"
@@ -472,8 +473,8 @@
                   />
                 </svg>
               </button>
-              <input class="count-number" value="2" id="count-number-children">
-              <button class="count-plus" type="button"
+              <input class="count-input" value="2" id="count-input-children">
+              <button class="count-button count-plus" type="button"
                 ><svg
                   width="14"
                   height="14"
@@ -484,6 +485,7 @@
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#7561574D" />
                 </svg>
               </button>
+            </div>
             </div>
           </div>
           <button class="modal-button button" type="submit">Найти</button>
