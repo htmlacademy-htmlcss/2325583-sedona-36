@@ -509,12 +509,12 @@ body {
   text-decoration: none;
 }
 
-.footer-social-link:hover svg path,
-.footer-social-link:focus svg path {
+.footer-social-link:hover path,
+.footer-social-link:focus path {
   fill: #68a2ca;
 }
 
-.footer-social-link:active svg path {
+.footer-social-link:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -546,8 +546,8 @@ body {
 .footer-contacts-academy {
   margin-top: 4px;
 }
-.footer-contacts-academy:hover svg path,
-.footer-contacts-academy:focus svg path {
+.footer-contacts-academy:hover path,
+.footer-contacts-academy:focus path {
   fill: #756157;
 }
 
@@ -555,7 +555,7 @@ body {
   outline: none;
 }
 
-.footer-contacts-academy:active svg path {
+.footer-contacts-academy:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1284,7 +1284,7 @@ body {
   outline: none;
 }
 
-.modal-close-button:active svg path {
+.modal-close-button:active path {
   background-color: #e6e6e6;
   fill-opacity: 30%;
 }
@@ -1441,8 +1441,8 @@ body {
   padding: 3px;
 }
 
-.count-button:hover svg path,
-.count-button:focus svg path {
+.count-button:hover path,
+.count-button:focus path {
   fill: #000000;
 }
 
