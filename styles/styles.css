@@ -515,7 +515,7 @@ body {
 }
 
 .footer-social-link:active svg path {
-  fill: #68a2ca4d;
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-social-link:focus {
@@ -556,7 +556,7 @@ body {
 }
 
 .footer-contacts-academy:active svg path {
-  fill: #7561574d;
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .main-catalog {
